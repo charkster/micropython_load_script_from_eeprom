@@ -7,8 +7,8 @@ class EEPROM: # generic
     def __init__(self, i2c):
         self.i2c       = i2c
         self.slave_id  = 0x50
-        self.addrsize  = 16
-        self.page_size = 128
+        self.addrsize  = 16  # in bits
+        self.page_size = 128 # bytes
         self.num_pages = 512
         self.page_write_delay = 0.01 # in seconds
        
